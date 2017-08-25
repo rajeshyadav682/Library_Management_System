@@ -20,6 +20,7 @@ background-size: 100% 720px;
 <table>
 <tr>
 <td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>
+
 </tr>
 
 </table>
@@ -29,8 +30,7 @@ background-size: 100% 720px;
   	 <td style="float:right;margin-left: 850px">
   	 <form action="AdminLogouts" method="get">
  <input type="button" name="logout" value="Log out" style="border-radius: 25px; font-size: 20px;background-color: blue;color: white;width: 100px"></td>
-  	 </tr>
-  	
+  	 </tr>	
 </table>
 
 <iframe height="530" width="300" src="librarian_menu.jsp" scrolling="no" frameborder="0" style="margin-top: 0px"></iframe>

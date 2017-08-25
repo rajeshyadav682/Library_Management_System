@@ -8,7 +8,7 @@
 </head>
 <body>
 <center>
-<h1 style="color: skyblue">Books</h1>
+<h1 style="color: skyblue">Add Books</h1>
 <form action="Books" method="post">
 <TABLE style="font-size: 20px;font-weight: bold;color:skyblue;text-transform:capitalize; ">
  <TR>

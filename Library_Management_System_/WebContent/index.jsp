@@ -20,8 +20,7 @@ background-size: 100% 720px;
 <td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>
 </tr>
 </table>
- <div id="headline">
-        
+ <div id="headline">     
           <div id="menu" >
          <ul type="none">
           <a href="student.jsp"><li><p4><b>STUDENTS</a><p4></li>

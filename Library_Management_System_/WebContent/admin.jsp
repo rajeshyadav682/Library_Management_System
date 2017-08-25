@@ -18,24 +18,10 @@ background-size: 100% 720px;
 </head>
 <body background="images/lib_back.jpg">
 <table>
-<td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>
+<tr> <jsp:include page="master_page/header.html"></jsp:include>
 </tr>
-
 </table>
-<script type="text/javascript">  
-function validateform(){  
-var username=document.adminlog.username.value;  
-var password=document.adminlog.password.value;  
-  
-if (username==null || username==""){  
-  alert("Name can't be blank");  
-  return false;  
-}else if(password.length<6){  
-  alert("Password must be at least 6 characters long.");  
-  return false;  
-  }  
-}  
-</script>  
+   
           <div id="menu">
          <ul type="none">
           <a href="student.jsp" ><li><b>Students</a></li>

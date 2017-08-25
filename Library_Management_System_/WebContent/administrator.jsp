@@ -19,7 +19,7 @@ background-size: 100% 720px;
 <body background="images/lib_back.jpg">
 <table>
 <tr>
-<td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>
+<td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include></td>
 </tr>
 
 </table>
