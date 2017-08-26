@@ -37,10 +37,10 @@ font-size:20px;
 <body>
  <div id="libmenu">
    <ul>
-  <li><a href="issue_books.jsp"  target="librarian_menu">Issue Books</a></li>
-   <li><a href="return_books.jsp"   target="librarian_menu">Return Books</a></li>
-       <li><a href="reissue_books.jsp"  target="librarian_menu">Reissue Books</a></li>
-           <li><a href="books.jsp"  target="librarian_menu">Add Books</a></li>
+  <li><a href="books.jsp"  target="librarian_menu">Add Books</a></li>
+   <li><a href="issue_books.jsp"  target="librarian_menu">Issue Books</a></li>
+       <li><a href="reissue_books.jsp"  target="librarian_menu">Reissue Books</a></li> 
+           <li><a href="return.jsp" target="librarian_menu">Return Books</a></li>
                <li><a href="search_books.jsp"  target="librarian_menu">Search Books</a></li>
                  <li><a href="#"  target="librarian_menu">Calculate Fine</a></li>
             </ul>

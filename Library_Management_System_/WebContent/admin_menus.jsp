@@ -38,9 +38,9 @@ font-size:20px;
  <div id="Admenu">
    <ul>
   <li><a href="register_user.jsp"  target="iframe">Register User</a></li>
-   <li><a href="search_books.jsp"   target="iframe">Search Books</a></li>
-       <li><a href="view_book"  target="iframe">View Books</a></li>
-               <li><a href="remove_book"  target="iframe">Remove Books</a></li>
+   <li><a href="search_books.jsp"   target="iframe">Add Librarian</a></li>
+       <li><a href="view_book"  target="iframe">View Librarian</a></li>
+               <li><a href="remove_book"  target="iframe">Delete Librarian</a></li>
             </ul>
             
             </div>
