@@ -28,7 +28,7 @@ background-size: 100% 720px;
   	 <center>
   	 <h3 style="margin-top: 0px;font-size:27px;color:green"> Welcome Librarian</h3></center>
   	 <td style="float:right;margin-left: 850px">
-  	 <form action="AdminLogouts" method="get">
+  	 <form action="LibLogout" method="get">
  <input type="button" name="logout" value="Log out" style="border-radius: 25px; font-size: 20px;background-color: blue;color: white;width: 100px"></td>
   	 </tr>	
 </table>

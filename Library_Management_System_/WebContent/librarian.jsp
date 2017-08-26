@@ -17,6 +17,7 @@ background-size: 100% 720px;
 
 </head>
 <body background="images/lib_back.jpg">
+  
 <table>
 <td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>
 </tr>
@@ -32,7 +33,7 @@ background-size: 100% 720px;
       <fieldset style="width:290px; height:250px; margin:-10px;">
           <legend><p3>Library Management System</p3></legend>
       <img src="images/lib_logo.jpg" alt="administrator" style="height:80px; width:70px"><br>  
-      <form action="LibrarianLogin" method="get"> 
+      <form action="LibLogin" method="get"> 
     <input type="text" name="username" placeholder="Username" style="border-radius:25px ">
     <input type="password" name="password" placeholder="Password" style="border-radius:25px ">
     <input type="submit" name="login" class="login login-submit" value="login" style="border-radius:25px ">

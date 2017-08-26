@@ -40,7 +40,7 @@ public class Search_book extends HttpServlet {
 	ResultSet rs=ps.executeQuery();                
 	ResultSetMetaData rsmd=rs.getMetaData();  
 	int total=rsmd.getColumnCount();  
-	out.print("<tr>");  
+	out.print("<tr bgcolor=blue>");  
 	for(int i=1;i<=total;i++)  
 	{  
 	out.print("<th>"+rsmd.getColumnName(i)+"</th>");  
