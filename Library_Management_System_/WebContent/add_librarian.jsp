@@ -7,11 +7,14 @@
 <title>Add Librarian</title>
 </head>
 <body>
-<table>
+<center>
+<h1 style="color: skyblue">Add Librarian</h1>
+<form action=AddLibrarian method="post">
+<table style="font-size: 20px;font-weight: bold;color:skyblue;text-transform:capitalize;">
  <TR>
     <TD>User Name</TD>
     <TD>
-      <INPUT TYPE="TEXT" NAME="uid" SIZE="25" style="border-radius:25px " >
+      <INPUT TYPE="TEXT" NAME="uname" SIZE="25" style="border-radius:25px " >
     </TD>
   </TR>
   <TR>
@@ -29,7 +32,7 @@
   <TR>
     <TD>Password</TD>
     <TD>
-      <INPUT TYPE="TEXT" NAME="age" SIZE="25" style="border-radius:25px">
+      <INPUT TYPE="password" NAME="password" SIZE="25" style="border-radius:25px">
     </TD>
   </TR>
   <TR>
@@ -37,7 +40,7 @@
     <TD><INPUT TYPE="TEXT" NAME="email" SIZE="25" style="border-radius:25px"></TD>
   </TR>
   <TR>
-    <TD>Phone Number</TD>
+    <TD>Phone No.</TD>
     <TD>
       <INPUT TYPE="TEXT" NAME="pno" SIZE="25" style="border-radius:25px">
     </TD>
@@ -56,8 +59,8 @@
   </TR>
 </TABLE>
 <P><INPUT TYPE="SUBMIT" VALUE="Add Librarian" style="border-radius: 35px; font-size: 15px;background-color: gray;color: white;width: 100px"></P>
-</form></center>
-
+</form>
+</center>
 
 </body>
 </html>
