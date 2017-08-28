@@ -14,23 +14,19 @@ import javax.servlet.http.HttpSession;
 public class AdminLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 response.setContentType("text/html"); 
-		PrintWriter out = response.getWriter();
 		System.out.println("admin-login");
 		String uname= request.getParameter("username");
 		String pass=  request.getParameter("password");
+		
+		HttpSession session = request.getSession();
 		if(uname.equals("admin") && pass.equals("admin"))
 		{
-				
-			HttpSession session = request.getSession();
 			session.setAttribute("username",uname);
-			response.sendRedirect("administrator.jsp");
-		
+			response.sendRedirect("./AdminLoginLogic");	
 		}
 			else{
-				request.setAttribute("message", "Account is invalid");
-				
 				response.sendRedirect("admin.jsp");
 		}
 }

@@ -29,7 +29,8 @@ background-size: 100% 720px;
   	 <h3 style="margin-top: 0px;font-size:27px;color:green"> Welcome Admin</h3></center>
   	 <td style="float:right;margin-left: 850px">
   	 <form action="AdminLogouts" method="get">
- <input type="button" name="logout" value="Log out" style="border-radius: 25px; font-size: 20px;background-color: blue;color: white;width: 100px"></td>
+ <input type="button" name="logout" value="Log out" style="border-radius: 25px; font-size: 20px;background-color: blue;color: white;:
+ float:"right";width: 100px"></td>
   	 </tr>
   	
 </table>

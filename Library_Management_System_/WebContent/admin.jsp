@@ -34,8 +34,7 @@ background-size: 100% 720px;
      <fieldset style="width:290px; height:250px; margin:-10px;">
           <legend><p3>Library Management System</p3></legend>
       <img src="images/admin.jpg" alt="administrator" style="height:80px; width:70px"><br>
-      <form action="AdminLogin" method="get" name="adminlog" onsubmit="validateform"> 
-      ${message }    
+      <form action="AdminLogin" method="post" name="adminlog" onsubmit="validateform">    
     <input type="text" name="username" placeholder="Username"  style="border-radius:25px ">
     <input type="password" name="password" placeholder="Password"  style="border-radius:25px ">
     <input type="submit" name="login" class="login login-submit" value="login"  style="border-radius:25px ">
