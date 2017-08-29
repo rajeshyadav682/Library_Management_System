@@ -43,22 +43,28 @@ public class LibLogin extends HttpServlet {
 		 ResultSet rs =ps.executeQuery();
 	        while(rs.next()) {
 	       
-	if(username.equals(username)&& password.equals(password))
+	         if(username.equals(username)&& password.equals(password)) 
+	        {
+	        	 System.out.println("sending sendredict method ");
 	response.sendRedirect("librarian_acces.jsp");
-			}
+	System.out.println("sendredict method ");
+	        }
 		}
-else{
+			}
+else
+	System.out.println("sending sendredict method ");
+			out.println("incorrect password");
 	response.sendRedirect("librarian.jsp");
-
+	System.out.println("end");
 		
-		}      
-      }catch(Exception e)
+		     
+		}
+      catch(Exception e)
       {
           e.printStackTrace();
       }
               
-  }  
+	}
 }
-		
 		
 		

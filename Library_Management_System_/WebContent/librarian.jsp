@@ -14,9 +14,23 @@ background-size: 100% 720px;
 }
 
 </style>
-
 </head>
 <body background="images/lib_back.jpg">
+<script>  
+function validateform(){  
+var username=document.liblogin.username.value;  
+var password=document.liblogin.password.value;  
+  
+if (username==null || username==""){  
+	  alert("Username can't be blank");  
+	  return false;  
+	}else if(password==null||password ==""){  
+	  alert("Password must needs to login");  
+	  return false; 
+	}
+	}  
+</script>
+
   
 <table>
 <td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>
@@ -33,7 +47,7 @@ background-size: 100% 720px;
       <fieldset style="width:290px; height:250px; margin:-10px;">
           <legend><p3>Library Management System</p3></legend>
       <img src="images/lib_logo.jpg" alt="administrator" style="height:80px; width:70px"><br>  
-      <form action="LibLogin" method="post"> 
+      <form action="LibLogin" method="post" name="liblogin" onsubmit="return validateform()"> 
     <input type="text" name="username" placeholder="Username" style="border-radius:25px ">
     <input type="password" name="password" placeholder="Password" style="border-radius:25px ">
     <input type="submit" name="login" class="login login-submit" value="login" style="border-radius:25px ">
