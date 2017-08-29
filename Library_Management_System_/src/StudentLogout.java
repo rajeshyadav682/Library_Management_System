@@ -8,13 +8,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/LibLogout")
-public class LibLogout extends HttpServlet {
+/**
+ * Servlet implementation class StudentLogout
+ */
+@WebServlet("/StudentLogout")
+public class StudentLogout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
+  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.removeAttribute("lib_username");
+		session.removeAttribute("username");
 		session.invalidate();
-		response.sendRedirect("librarian.jsp");	
-		}
+		response.sendRedirect("student.jsp");	
+	}
+
 }

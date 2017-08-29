@@ -20,11 +20,12 @@ public class AdminLogin extends HttpServlet {
 		String uname= request.getParameter("username");
 		String pass=  request.getParameter("password");
 		
-		HttpSession session = request.getSession();
+		
 		if(uname.equals("admin") && pass.equals("admin"))
 		{
-			session.setAttribute("username",uname);
-			response.sendRedirect("./AdminLoginLogic");	
+			HttpSession session = request.getSession();
+			session.setAttribute("admin_username",uname);
+			response.sendRedirect("administrator.jsp");	
 		}
 			else{
 				response.sendRedirect("admin.jsp");

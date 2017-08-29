@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,6 +20,7 @@ public class Books extends HttpServlet {
        
 		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			System.out.println("detect");
+			int exist;
 			PrintWriter out = response.getWriter();
 			String book_n = request.getParameter("book_no");
 			int book_no = Integer.parseInt(book_n);
@@ -46,15 +49,26 @@ public class Books extends HttpServlet {
 				ps.setString(5,edition);
 				ps.setInt(6,copies);
 				ps.setInt(7,cost);
-				int res= ps.executeUpdate();
+				ResultSet rs = ps.executeQuery();
 				
-				if(res!=0)
+				if(rs.next())
+					
 				{
+					exist = rs.getInt(book_no);
+					if(exist!=book_no)
+					{
 					out.println("<html><body><center><h1>");
 					out.println("Added Books SUCCESSFULLY");
 					out.print("</h1></center></body></html>");	
 					out.close();
 				}
+					if(exist==book_no) {
+						out.println("<html><body><center><h1>");
+						out.println("Book No already exist");
+						out.print("</h1></center></body></html>");	
+						out.close();
+				}
+			}
 				ps.close();
 				con.close();
 			}

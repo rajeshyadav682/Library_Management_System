@@ -24,6 +24,8 @@ public class LibLogin extends HttpServlet {
 		System.out.println("lib-login");
 		String username = request.getParameter("username");
         String password = request.getParameter("password");
+        HttpSession session = request.getSession();
+        session.setAttribute("lib_username",username);
 	
 		try {
 			if(username!=null) 

@@ -23,7 +23,7 @@ public class StudentLogin extends HttpServlet {
 			if(uname.equals("student") && pass.equals("student"))
 			{
 				HttpSession session=request.getSession();  
-		        session.setAttribute("username",uname);
+		        session.setAttribute("stu_username",uname);
 	
 				response.sendRedirect("student_access.jsp");
 			

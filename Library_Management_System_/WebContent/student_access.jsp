@@ -17,6 +17,12 @@ background-size: 100% 720px;
 </style>
 </head>
 <body background="images/lib_back.jpg">
+<%
+  if(session.getAttribute("stu_username")==null)
+		  { 
+	  response.sendRedirect("student.jsp");  
+  }
+  %>
 <table>
 <tr>
 <td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>
@@ -26,8 +32,9 @@ background-size: 100% 720px;
 <table>
   	 <tr>
   	 <td style="float:right;margin-left: 850px">
-  	 <form action="AdminLogouts" method="get">
- <input type="button" name="logout" value="Log out" style="border-radius: 25px; font-size: 20px;background-color: blue;color: white;width: 100px"></td>
+  	 <form action="StudentLogout" method="get">
+  	<input type ="submit" value="Logout" style="color:blue;border-radius: 25px;font-size: 20px;float:right;width:100px; background-color:blue;color:white;" >
+  	</form></td>
   	 </tr>
   	
 </table>
