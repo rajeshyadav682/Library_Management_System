@@ -7,9 +7,11 @@
 <title>Delete Librarian</title>
 </head>
 <body>
+<script type="text/javascript" src="js validation/deletelibrarian.js">
+</script>
 <center>
 <h1 style="color: skyblue">Delete Librarian</h1>
-<form action="DeleteLibrarian" method="post">
+<form action="DeleteLibrarian" name="deletelib" method="post" onsubmit="return validate()">
 <table style="font-size: 20px;font-weight: bold;color:skyblue;text-transform:capitalize;">
  <TR>
     <TD>User Name</TD>

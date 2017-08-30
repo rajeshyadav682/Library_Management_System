@@ -7,9 +7,12 @@
 <title>Add Librarian</title>
 </head>
 <body>
+<script type="text/javascript" src="js validation/addlibrarian.js">
+
+</script>
 <center>
 <h1 style="color: skyblue">Add Librarian</h1>
-<form action=AddLibrarian method="post">
+<form action="AddLibrarian" method="post"  name="addlib" onsubmit="return validateform()">
 <table style="font-size: 20px;font-weight: bold;color:skyblue;text-transform:capitalize;">
  <TR>
     <TD>User Name</TD>

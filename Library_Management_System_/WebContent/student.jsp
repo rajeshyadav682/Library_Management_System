@@ -15,18 +15,7 @@ background-size: 100% 720px;
 </style>
 </head>
 <body background="images/lib_back.jpg">
-<script>  
-function validateform(){  
-var username=document.studentlogin.username.value;  
-var password=document.studentlogin.password.value;  
-if (username==null || username==""){  
-	  alert("Username can't be blank");  
-	  return false;  
-	}else if(password==null||password ==""){  
-	  alert("password must needs to login");  
-	  return false; 
-	}
-	}  
+<script type="text/javascript" src="js validation/student.js">  
 </script>
 <table>
 <td style="height: 16px;"><jsp:include page="master_page/header.html"></jsp:include> </td>

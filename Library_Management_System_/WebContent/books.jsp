@@ -7,9 +7,11 @@
 <title>Books</title>
 </head>
 <body>
+<script type="text/javascript" src="js validation/books.js">
+</script>
 <center>
 <h1 style="color: skyblue">Add Books</h1>
-<form action="Books" method="post">
+<form action="Books" method="post" name="books_form" onsubmit="return validate()">
 <TABLE style="font-size: 20px;font-weight: bold;color:skyblue;text-transform:capitalize; ">
  <TR>
     <TD>book no</TD>

@@ -17,18 +17,7 @@ background-size: 100% 720px;
 
 </head>
 <body background="images/lib_back.jpg">
-<script>
-function validateform(){  
-var username=document.adminlogin.username.value;  
-var password=document.adminlogin.password.value;  
-if (username==null || username==""){  
-	  alert("Username can't be blank");  
-	  return false;  
-	}else if(password==null||password ==""){  
-	  alert("password must needs to login");  
-	  return false; 
-	}
-	}  
+<script type="text/javascript" src="js validation/admin.js">
 </script>
 <table>
 <tr> <jsp:include page="master_page/header.html"></jsp:include>

@@ -16,19 +16,7 @@ background-size: 100% 720px;
 </style>
 </head>
 <body background="images/lib_back.jpg">
-<script>  
-function validateform(){  
-var username=document.liblogin.username.value;  
-var password=document.liblogin.password.value;  
-  
-if (username==null || username==""){  
-	  alert("Username can't be blank");  
-	  return false;  
-	}else if(password==null||password ==""){  
-	  alert("Password must needs to login");  
-	  return false; 
-	}
-	}  
+<script type="text/javascript" src="js validation/lib.js">  
 </script>
 
   

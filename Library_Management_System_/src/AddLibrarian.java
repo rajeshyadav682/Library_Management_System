@@ -6,7 +6,6 @@ import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -34,7 +33,6 @@ public class AddLibrarian extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		PrintWriter out = response.getWriter();
-		String exist;
     	String username= request.getParameter("uname");
 		String fname= request.getParameter("fname");
 		String lname= request.getParameter("lname");
@@ -59,26 +57,14 @@ public class AddLibrarian extends HttpServlet {
 			ps.setString(5,email);
 			ps.setString(6,phone);
 			ps.setString(7,add);
-			ResultSet rs=ps.executeQuery();
+			int res= ps.executeUpdate();
 			
-			if(rs.next())
-			{	
-				exist = rs.getString(username);
-				
-				if(exist!=username)
-				{
+			if(res!=0)
+			{
 				out.println("<html><body><center><h1>");
-				out.println("Add Librarian Successfully");
+				out.println("Add Librarian SUCCESSFULLY");
 				out.print("</h1></center></body></html>");	
-	
-				}
-				if(exist.equals(username)) {
-					out.println("<html><body><center><h1>");
-					out.println("Username already exist");
-					out.print("</h1></center></body></html>");
-					
-				}
-				
+				out.close();
 			}
 			ps.close();
 			con.close();
